@@ -1,0 +1,217 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  background-color: #000000;
+}
+
+.container {
+  border-color: #ffffff;
+  border-style: double;
+  border-width: 3px;
+  border-radius: 5px;
+  background-image: url("../icons/bg2.png");
+  background-repeat: no-repeat;
+  background-size: 100vh;
+  width: 100%;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.container strong {
+  color: #ffffff;
+  font-weight: bolder;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 8px;
+}
+
+.dinasor {
+  background-image: url("../icons/4.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  bottom: 45%;
+  left: -0;
+  transition: ease all 0.1s;
+  animation: example 7s linear;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 14s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 40s;
+}
+
+.jump {
+  transition: ease all 0.1s;
+  animation: example 3s linear;
+  -webkit-animation-name: jump_up; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: jump_up;
+  animation-duration: 6s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  0% {
+    left: -0;
+  }
+  25% {
+    left: 140px;
+  }
+  50% {
+    right: 0;
+  }
+
+  100% {
+    right: 0px;
+  }
+}
+@-webkit-keyframes jump_up {
+  0% {
+    bottom: 45%;
+  }
+  25% {
+    bottom: 45%;
+  }
+  50% {
+    bottom: 60%;
+  }
+
+  100% {
+    bottom: 45%;
+  }
+}
+
+/*
+/*________________________________
+      DIEING AREA CODES 
+_______________________________*/
+
+.die1 {
+  background-image: url("../action/5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 189px;
+  height: 100px;
+  position: absolute;
+  bottom: 35%;
+  right: 35%;
+  transition: ease all 0.7s;
+}
+.die2 {
+  background-image: url("../action/6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 189px;
+  height: 120px;
+  position: absolute;
+  bottom: 48%;
+  right: 48%;
+  transition: ease all 0.7s;
+}
+.die3 {
+  background-image: url("../action/7.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 189px;
+  height: 120px;
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  transition: ease all 0.7s;
+}
+.die4 {
+  background-image: url("../action/8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 189px;
+  height: 120px;
+  position: absolute;
+  bottom: 55%;
+  right: 55%;
+  transition: ease all 0.7s;
+}
+.die5 {
+  background-image: url("../action/4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 189px;
+  height: 120px;
+  position: absolute;
+  bottom: 45%;
+  right: 60%;
+  transition: ease all 1.7s;
+}
+/*_______________________________
+      DIEING AREA CODES 
+________________________________*/
+
+.shooter {
+  background-image: url("../action/shooter.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 130px;
+  height: 115px;
+  position: absolute;
+  bottom: 45%;
+  float: right;
+  margin-left: 65%;
+}
+.shooting {
+  background-image: url("../icons/9.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 190px;
+  height: 132px;
+  position: absolute;
+  bottom: 45%;
+  float: right;
+  margin-left: 45%;
+}
+
+/*_________________________________
+      CONTROLLER AREA CODES 
+_________________________________*/
+.control {
+  width: 100%;
+  align-items: center;
+}
+.left_btn {
+  border: none;
+  outline: none;
+  justify-content: space-between;
+  margin: 5px 8px;
+  float: left;
+  padding: 15px;
+  border-radius: 100%;
+  border-color: #5ec6ff;
+  border-style: double;
+  border-width: 3px;
+}
+.right_btn {
+  border: none;
+  outline: none;
+  justify-content: space-between;
+  margin: 5px 8px;
+  float: right;
+  padding: 15px;
+  border-radius: 100%;
+  border-color: #5ec6ff;
+  border-style: double;
+  border-width: 3px;
+}
+.left_btn img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.right_btn img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
